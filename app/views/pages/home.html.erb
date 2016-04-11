@@ -1,8 +1,13 @@
 <div class= "jumbotron center">
-	<h1>Bienvenido a mi app.</h1>
+	<h1>LangVid.</h1>
+	<h2>Videos con transcripciones</h2>
 
 	<% if user_signed_in? %>
-	# do something
+	<h3>Elíge un video, todos tienes transcripciones al dar click en CC.</h3>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/kTMHruMz4Is" frameborder="0" allowfullscreen></iframe>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/79GIwKU6LD0" frameborder="0" allowfullscreen></iframe>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/6qpudAhYhpc" frameborder="0" allowfullscreen></iframe>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/9D05ej8u-gU" frameborder="0" allowfullscreen></iframe>
 	<% else %>
 		<p><%= link_to  "Ingresa", new_user_session_path, class: "btn btn-default btn-lg" %>   <%= link_to  "Regístrate", new_user_registration_path, class: "btn btn-primary btn-lg" %>
 		</p>
